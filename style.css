@@ -1,0 +1,214 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.main-sec1, .main-sec2 {
+    display: none;
+}
+
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#left {
+    width: 40%;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+.content {
+    padding: 40px;
+}
+
+.content h1{
+    color: #575A85;
+    
+}
+
+.content p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content img {
+    width: 400px;
+    height: 400px;
+    margin-top: 60px;
+}
+
+#right {
+    width: 60%;
+    background-color: #575A85;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#right div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
+@media (max-width: 578px) {
+    .content {
+        padding: 20px;
+    }
+    
+    .content img {
+        width: 300px;
+        height: 300px;
+        margin-top: 60px;
+    }
+    #left {
+        width: 100%;
+    }
+    section {
+        flex-direction: column;
+    }
+    #right {
+        width: 100%;
+       height: 30Vh;
+    }
+    #right div {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+/* Second Page style */
+.head {
+    width: 90%;
+    margin: auto;
+}
+.head-info {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.head-info div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.head-info label {
+    font-size: 34px;
+    width: 30%;
+}
+
+/* Location container style */
+.map {
+    width: 100%;
+    height: 700px;
+    background-color: #575A85;
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+#map-container {
+    width: 80%;
+    margin: auto;
+    height: 600px;
+}
+
+@media (max-width: 578px) {
+    #map-container {
+        width: 90%;
+        height: 300px;
+    }
+    .map {
+        height: 400px;
+        padding: 10px 0;
+    }
+    .head-info div {
+        flex-wrap: wrap;
+    }
+    .head-info label {
+        font-size: 20px;
+        width: 100%;
+    }
+
+}
+
+/* More Information Section */
+
+#more-info {
+    width: 90%;
+    margin: auto;
+}
+
+#more-info h2 {
+    font-size: 36px;
+}
+#more-info label {
+    font-size: 34px;
+}
+
+@media (max-width: 578px) {
+    #more-info h2 {
+        font-size: 20px;
+    }
+    #more-info label {
+        font-size: 16px;
+    }
+}
+
+/* Post offfice section style */
+.post-offices {
+    width: 90%;
+    margin: auto;
+}
+
+.post-office-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.post-office {
+    height: 300px;
+    background-color: #575A85;
+    color: white;
+    padding: 40px
+}
+
+.post-offices input {
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px 0;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+@media (max-width: 578px) {
+    .post-office-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
